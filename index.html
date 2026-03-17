@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Asist Tech - Asesoría Informática</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <style>
@@ -31,10 +31,49 @@
     .navbar-toggler {
       border: none;
     }
+    /* Parte del Hero */
+    #hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      padding: 150px 0;
+      text-align: center;
+    }
+    #hero h1 {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 4rem;
+      font-weight: 900;
+      margin-bottom: 1.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    #hero p {
+      font-size: 1.4rem;
+      margin-bottom: 3rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn-hero {
+      background-color: #ff4c68;
+      border: none;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+    .btn-hero:hover {
+      background-color: #e53e5a;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(255,76,104,0.4);
+    }
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#inicio">
         <i class="fas fa-laptop-code me-2"></i>Asist Tech
@@ -45,7 +84,6 @@
               data-bs-target="#menuPrincipal">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
       <div class="collapse navbar-collapse" id="menuPrincipal">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -61,6 +99,16 @@
       </div>
     </div>
   </nav>
+  <!-- Parte del Hero -->
+  <section id="hero">
+    <div class="container">
+      <h1>Asesoría Informática Profesional</h1>
+      <p>Soluciones tecnológicas personalizadas para tu negocio. Mantenimiento, desarrollo web, ciberseguridad y optimización de sistemas.</p>
+      <a href="#contacto" class="btn btn-hero btn-lg">
+        <i class="fas fa-rocket me-2"></i>¡Empieza Hoy!
+      </a>
+    </div>
+  </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
