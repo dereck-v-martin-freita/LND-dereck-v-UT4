@@ -17,6 +17,7 @@
       overflow-x: hidden;
     }
     #hero,
+    #testimonios,
     #servicios,
     #precios,
     #contacto,
@@ -84,6 +85,54 @@
       transform: translateY(-3px);
       box-shadow: 0 10px 25px rgba(255,76,104,0.4);
       color: white;
+    }
+    /* Apartado de los Testimonios */
+    #testimonios {
+      padding: 100px 0;
+      background-color: #ff4c68;
+      text-align: center;
+    }
+    #testimonios .titulo-seccion h2 {
+      color: white;
+    }
+    #testimonios .titulo-seccion p {
+      color: #f8d7da;
+    }
+    .tarjeta-testimonio {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 50px 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    .foto-testimonio {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid #ff4c68;
+    }
+    .texto-testimonio {
+      font-size: 1.4rem;
+      color: #212529;
+      font-weight: 700;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .nombre-testimonio {
+      font-size: 1.1rem;
+      color: #6c757d;
+      margin-bottom: 0;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 8%;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(100%);
     }
     /* Apartado de los Servicios  */
     #servicios {
@@ -299,6 +348,7 @@
         padding-top: 72px;
       }
       #hero,
+      #testimonios,
       #servicios,
       #precios,
       #contacto,
@@ -320,6 +370,7 @@
         padding: 12px 28px;
         font-size: 1rem;
       }
+      #testimonios,
       #servicios,
       #precios,
       #contacto {
@@ -331,6 +382,12 @@
       .titulo-seccion p {
         font-size: 1rem;
         padding: 0 10px;
+      }
+      .tarjeta-testimonio {
+        padding: 30px 20px;
+      }
+      .texto-testimonio {
+        font-size: 1.1rem;
       }
       .servicio-card,
       .info-contacto,
@@ -379,6 +436,9 @@
       <div class="collapse navbar-collapse" id="menuPrincipal">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
+            <a class="nav-link" href="#testimonios">Testimonios</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#servicios">Servicios</a>
           </li>
           <li class="nav-item">
@@ -400,6 +460,42 @@
       <a href="#contacto" class="btn btn-hero btn-lg">
         <i class="fas fa-rocket me-2"></i>¡Empieza Hoy!
       </a>
+    </div>
+  </section>
+
+  <!-- Los Testimonios -->
+  <section id="testimonios">
+    <div class="container">
+      <div class="titulo-seccion">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p>Empresas y profesionales que ya han confiado en Asist Tech</p>
+      </div>
+      <div id="carrusel-testimonios" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="hover" data-bs-keyboard="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="tarjeta-testimonio">
+              <img src="Imagenes/testimonio1.jpg" alt="Cliente satisfecho" class="foto-testimonio">
+              <p class="texto-testimonio">“Gracias a Asist Tech mejoramos la seguridad de nuestra empresa y resolvimos incidencias que arrastrábamos desde hacía meses.”</p>
+              <p class="nombre-testimonio">Laura Pérez - Gerente de oficina</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="tarjeta-testimonio">
+              <img src="Imagenes/testimonio2.jpg" alt="Cliente satisfecho" class="foto-testimonio">
+              <p class="texto-testimonio">“Nos ayudaron con la web, las copias de seguridad y el mantenimiento de equipos. El servicio ha sido rápido y muy profesional.”</p>
+              <p class="nombre-testimonio">Carlos Martín - Autónomo</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-testimonios" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrusel-testimonios" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
     </div>
   </section>
 
