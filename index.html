@@ -26,6 +26,7 @@
     #precios,
     #marcas,
     #faq,
+    #cta-final,
     #contacto,
     #footer {
       scroll-margin-top: 90px;
@@ -165,12 +166,14 @@
     #precios,
     #marcas,
     #faq,
+    #cta-final,
     #contacto {
       padding: 100px 0;
     }
 
     #servicios,
-    #marcas {
+    #marcas,
+    #cta-final {
       background-color: #f8f9fa;
     }
 
@@ -339,6 +342,53 @@
       background-color: white;
     }
 
+    /* CTA Final */
+    .cta-box {
+      background: linear-gradient(135deg, #ff4c68, #e53e5a);
+      color: white;
+      padding: 60px 30px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    .cta-box h2 {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 2.6rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+
+    .cta-box p {
+      font-size: 1.15rem;
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .btn-cta-final {
+      font-weight: 700;
+      padding: 12px 28px;
+      border-radius: 50px;
+      margin-top: 10px;
+    }
+
+    .btn-cta-final.btn-light {
+      color: #ff4c68;
+    }
+
+    .btn-cta-final.btn-light:hover {
+      background-color: #ffffff;
+      color: #e53e5a;
+    }
+
+    .btn-cta-final.btn-outline-light:hover {
+      color: #ff4c68;
+      background-color: white;
+    }
+
     /* Contacto */
     .info-contacto,
     .formulario-contacto {
@@ -464,6 +514,7 @@
       #precios,
       #marcas,
       #faq,
+      #cta-final,
       #contacto,
       #footer {
         scroll-margin-top: 80px;
@@ -493,6 +544,7 @@
       #precios,
       #marcas,
       #faq,
+      #cta-final,
       #contacto {
         padding: 70px 0;
       }
@@ -541,6 +593,23 @@
         padding: 18px 20px;
       }
 
+      .cta-box {
+        padding: 40px 20px;
+      }
+
+      .cta-box h2 {
+        font-size: 2rem;
+      }
+
+      .cta-box p {
+        font-size: 1rem;
+      }
+
+      .btn-cta-final {
+        width: 100%;
+        margin-right: 0 !important;
+      }
+
       .info-contacto h3 {
         font-size: 1.6rem;
       }
@@ -587,6 +656,7 @@
           <li class="nav-item"><a class="nav-link" href="#precios">Precios</a></li>
           <li class="nav-item"><a class="nav-link" href="#marcas">Marcas</a></li>
           <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cta-final">Asesoría</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
       </div>
@@ -837,6 +907,25 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section id="cta-final">
+    <div class="container">
+      <div class="cta-box text-center">
+        <h2>¿Necesitas ayuda informática para tu negocio?</h2>
+        <p>
+          Cuéntanos tu problema o tu proyecto y te propondremos una solución clara,
+          rápida y adaptada a tus necesidades.
+        </p>
+        <a href="#contacto" class="btn btn-light btn-lg btn-cta-final me-2">
+          Solicitar asesoría
+        </a>
+        <a href="#precios" class="btn btn-outline-light btn-lg btn-cta-final">
+          Ver planes
+        </a>
       </div>
     </div>
   </section>
