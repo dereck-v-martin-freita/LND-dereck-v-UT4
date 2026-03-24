@@ -119,6 +119,58 @@
       font-size: 1.1rem;
       line-height: 1.6;
     }
+    /* Apartado de los Precios */
+    #precios {
+      padding: 100px 0;
+      background-color: white;
+    }
+    .tarjeta-precio {
+      margin-top: 40px;
+    }
+    .tarjeta-precio .card {
+      border: 1px solid #dee2e6;
+      transition: all 0.3s ease;
+    }
+    .tarjeta-precio .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+    .tarjeta-precio .card-header {
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 20px;
+    }
+    .tarjeta-precio .card-header h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0;
+      color: #212529;
+    }
+    .tarjeta-precio .card-body {
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .tarjeta-precio .card-body h4 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #212529;
+      margin-bottom: 10px;
+    }
+    .tarjeta-precio .precio {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #212529;
+      margin-bottom: 20px;
+    }
+    .tarjeta-precio .detalle {
+      color: #6c757d;
+      font-size: 1rem;
+      margin-bottom: 25px;
+    }
+    .btn-precio {
+      width: 100%;
+      font-weight: 700;
+    }
   </style>
 </head>
 <body>
@@ -186,6 +238,56 @@
             <i class="fas fa-shield-alt icono-servicio"></i>
             <h3>Ciberseguridad</h3>
             <p>Protección de datos, auditorías de seguridad y formación contra ciberataques.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Los Precios -->
+  <section id="precios">
+    <div class="container">
+      <div class="titulo-seccion">
+        <h2>Nuestros Planes</h2>
+        <p>Elige la solución que mejor se adapta a las necesidades de tu negocio</p>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-3 g-4">
+        <div class="col tarjeta-precio">
+          <div class="card h-100">
+            <div class="card-header">
+              <h3>Básico</h3>
+            </div>
+            <div class="card-body">
+              <h4>Asistencia Puntual</h4>
+              <p class="precio">29€/mes</p>
+              <p class="detalle">Soporte remoto, revisión básica de equipos y resolución de incidencias comunes.</p>
+              <button type="button" class="btn btn-outline-dark btn-lg btn-precio">Lo quiero</button>
+            </div>
+          </div>
+        </div>
+        <div class="col tarjeta-precio">
+          <div class="card h-100">
+            <div class="card-header">
+              <h3>Profesional</h3>
+            </div>
+            <div class="card-body">
+              <h4>Soporte Completo</h4>
+              <p class="precio">59€/mes</p>
+              <p class="detalle">Mantenimiento mensual, optimización de sistemas, copias de seguridad y soporte prioritario.</p>
+              <button type="button" class="btn btn-dark btn-lg btn-precio">Lo quiero</button>
+            </div>
+          </div>
+        </div>
+        <div class="col tarjeta-precio">
+          <div class="card h-100">
+            <div class="card-header">
+              <h3>Empresa</h3>
+            </div>
+            <div class="card-body">
+              <h4>Solución Integral</h4>
+              <p class="precio">99€/mes</p>
+              <p class="detalle">Soporte avanzado, ciberseguridad, mantenimiento web y asesoría informática personalizada.</p>
+              <button type="button" class="btn btn-outline-dark btn-lg btn-precio">Lo quiero</button>
+            </div>
           </div>
         </div>
       </div>
