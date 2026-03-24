@@ -4,49 +4,60 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Asist Tech - Asesoría Informática</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
   <style>
     html {
       scroll-behavior: smooth;
     }
+
     body {
       font-family: 'Montserrat', sans-serif;
       padding-top: 76px;
       overflow-x: hidden;
     }
+
     #hero,
     #testimonios,
     #servicios,
     #precios,
+    #marcas,
     #contacto,
     #footer {
       scroll-margin-top: 90px;
     }
+
     .navbar-brand {
       font-family: 'Ubuntu', sans-serif;
       font-weight: 700;
       font-size: 1.8rem;
       color: #ff4c68 !important;
     }
+
     .navbar {
       background-color: #fff !important;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
+
     .nav-link {
       font-weight: 500;
       color: #333 !important;
       transition: all 0.3s ease;
     }
+
     .nav-link:hover {
       color: #ff4c68 !important;
     }
+
     .navbar-toggler {
       border: none;
       box-shadow: none !important;
     }
-    /* Parte del Hero */
+
+    /* Hero */
     #hero {
       background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Imagenes/Foto.jpg');
       background-size: cover;
@@ -56,6 +67,7 @@
       padding: 150px 0;
       text-align: center;
     }
+
     #hero h1 {
       font-family: 'Ubuntu', sans-serif;
       font-size: 4rem;
@@ -63,6 +75,7 @@
       margin-bottom: 1.5rem;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
+
     #hero p {
       font-size: 1.4rem;
       margin-bottom: 3rem;
@@ -70,6 +83,7 @@
       margin-left: auto;
       margin-right: auto;
     }
+
     .btn-hero {
       background-color: #ff4c68;
       border: none;
@@ -80,24 +94,29 @@
       transition: all 0.3s ease;
       color: white;
     }
+
     .btn-hero:hover {
       background-color: #e53e5a;
       transform: translateY(-3px);
       box-shadow: 0 10px 25px rgba(255,76,104,0.4);
       color: white;
     }
-    /* Apartado de los Testimonios */
+
+    /* Testimonios */
     #testimonios {
       padding: 100px 0;
       background-color: #ff4c68;
       text-align: center;
     }
+
     #testimonios .titulo-seccion h2 {
       color: white;
     }
+
     #testimonios .titulo-seccion p {
       color: #f8d7da;
     }
+
     .tarjeta-testimonio {
       max-width: 800px;
       margin: 0 auto;
@@ -106,6 +125,7 @@
       border-radius: 15px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
+
     .foto-testimonio {
       width: 100px;
       height: 100px;
@@ -114,6 +134,7 @@
       margin-bottom: 20px;
       border: 4px solid #ff4c68;
     }
+
     .texto-testimonio {
       font-size: 1.4rem;
       color: #212529;
@@ -121,28 +142,46 @@
       line-height: 1.6;
       margin-bottom: 20px;
     }
+
     .nombre-testimonio {
       font-size: 1.1rem;
       color: #6c757d;
       margin-bottom: 0;
     }
+
     .carousel-control-prev,
     .carousel-control-next {
       width: 8%;
     }
+
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       filter: invert(100%);
     }
-    /* Apartado de los Servicios  */
-    #servicios {
+
+    /* Secciones */
+    #servicios,
+    #precios,
+    #marcas,
+    #contacto {
       padding: 100px 0;
+    }
+
+    #servicios,
+    #marcas {
       background-color: #f8f9fa;
     }
+
+    #precios,
+    #contacto {
+      background-color: white;
+    }
+
     .titulo-seccion {
       text-align: center;
       margin-bottom: 80px;
     }
+
     .titulo-seccion h2 {
       font-family: 'Ubuntu', sans-serif;
       font-size: 3rem;
@@ -150,145 +189,161 @@
       color: #212529;
       margin-bottom: 20px;
     }
+
     .titulo-seccion p {
       font-size: 1.2rem;
       color: #6c757d;
       max-width: 600px;
       margin: 0 auto;
     }
-    .servicio-card {
+
+    .servicio-card,
+    .marca-card {
       text-align: center;
       padding: 40px 20px;
-      transition: all 0.3s ease;
       border: none;
       background: white;
       box-shadow: 0 5px 20px rgba(0,0,0,0.08);
       border-radius: 12px;
+      height: 100%;
+      transition: all 0.3s ease;
     }
-    .servicio-card:hover {
+
+    .servicio-card:hover,
+    .marca-card:hover {
       transform: translateY(-10px);
       box-shadow: 0 15px 40px rgba(0,0,0,0.15);
     }
-    .icono-servicio {
+
+    .icono-servicio,
+    .icono-marca {
       font-size: 4rem;
       color: #ff4c68;
       margin-bottom: 25px;
     }
-    .servicio-card h3 {
+
+    .servicio-card h3,
+    .marca-card h3 {
       font-size: 1.5rem;
       font-weight: 700;
       color: #212529;
       margin-bottom: 15px;
     }
-    .servicio-card p {
+
+    .servicio-card p,
+    .marca-card p {
       color: #6c757d;
       font-size: 1.1rem;
       line-height: 1.6;
+      margin-bottom: 0;
     }
-    /* Apartado de los Precios */
-    #precios {
-      padding: 100px 0;
-      background-color: white;
-    }
-    .tarjeta-precio {
-      margin-top: 40px;
-    }
+
+    /* Precios */
     .tarjeta-precio .card {
       border: 1px solid #dee2e6;
       transition: all 0.3s ease;
       border-radius: 12px;
       overflow: hidden;
+      height: 100%;
     }
+
     .tarjeta-precio .card:hover {
       transform: translateY(-10px);
       box-shadow: 0 15px 40px rgba(0,0,0,0.15);
     }
+
     .tarjeta-precio .card-header {
       background-color: #f8f9fa;
       text-align: center;
       padding: 20px;
     }
+
     .tarjeta-precio .card-header h3 {
       font-size: 1.5rem;
       font-weight: 700;
       margin: 0;
       color: #212529;
     }
+
     .tarjeta-precio .card-body {
       text-align: center;
       padding: 30px 20px;
     }
+
     .tarjeta-precio .card-body h4 {
       font-size: 2rem;
       font-weight: 700;
       color: #212529;
       margin-bottom: 10px;
     }
+
     .tarjeta-precio .precio {
       font-size: 1.2rem;
       font-weight: 700;
       color: #212529;
       margin-bottom: 20px;
     }
+
     .tarjeta-precio .detalle {
       color: #6c757d;
       font-size: 1rem;
       margin-bottom: 25px;
     }
+
     .btn-precio {
       width: 100%;
       font-weight: 700;
     }
-    /* Apartado del Contacto */
-    #contacto {
-      padding: 100px 0;
-      background-color: #f8f9fa;
-    }
-    .info-contacto {
+
+    /* Contacto */
+    .info-contacto,
+    .formulario-contacto {
       background-color: white;
       padding: 40px;
-      height: 100%;
       box-shadow: 0 5px 20px rgba(0,0,0,0.08);
       border-radius: 12px;
+      height: 100%;
     }
+
     .info-contacto h3 {
       font-size: 2rem;
       font-weight: 700;
       color: #212529;
       margin-bottom: 20px;
     }
+
     .info-contacto p {
       color: #6c757d;
       font-size: 1.1rem;
       margin-bottom: 20px;
     }
+
     .dato-contacto {
       margin-bottom: 20px;
       color: #212529;
       font-size: 1.1rem;
     }
+
     .dato-contacto i {
       color: #ff4c68;
       margin-right: 15px;
     }
-    .formulario-contacto {
-      background-color: white;
-      padding: 40px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-      border-radius: 12px;
-    }
+
     .formulario-contacto .form-label {
       font-weight: 700;
       color: #212529;
     }
+
     .formulario-contacto .form-control {
       padding: 12px 15px;
       border: 1px solid #ced4da;
     }
+
     .formulario-contacto .form-control:focus {
       border-color: #ff4c68;
       box-shadow: 0 0 0 0.2rem rgba(255,76,104,0.25);
     }
+
     .btn-contacto {
       background-color: #ff4c68;
       border: none;
@@ -296,19 +351,23 @@
       font-weight: 700;
       color: white;
     }
+
     .btn-contacto:hover {
       background-color: #e53e5a;
       color: white;
     }
-    /* Apartado del Footer */
+
+    /* Footer */
     #footer {
       background-color: #212529;
       text-align: center;
       padding: 50px 0;
     }
+
     .iconos-footer {
       margin-bottom: 25px;
     }
+
     .iconos-footer a {
       color: white;
       font-size: 1.6rem;
@@ -316,103 +375,130 @@
       text-decoration: none;
       transition: all 0.3s ease;
     }
+
     .iconos-footer a:hover {
       color: #ff4c68;
     }
+
     #footer p {
       color: #adb5bd;
       margin-bottom: 10px;
       font-size: 1rem;
     }
-    /* Ajustes responsive */
+
+    /* Responsive */
     @media (max-width: 991.98px) {
       .navbar-collapse {
         background-color: white;
         padding: 15px 0;
         margin-top: 10px;
       }
+
       .nav-link {
         text-align: center;
         padding: 10px 0;
       }
+
       #hero {
         background-attachment: scroll;
         padding: 120px 0;
       }
+
       .titulo-seccion {
         margin-bottom: 50px;
       }
     }
+
     @media (max-width: 767.98px) {
       body {
         padding-top: 72px;
       }
+
       #hero,
       #testimonios,
       #servicios,
       #precios,
+      #marcas,
       #contacto,
       #footer {
         scroll-margin-top: 80px;
       }
+
       #hero {
         padding: 100px 0;
       }
+
       #hero h1 {
         font-size: 2.5rem;
       }
+
       #hero p {
         font-size: 1.1rem;
         margin-bottom: 2rem;
         padding: 0 10px;
       }
+
       .btn-hero {
         padding: 12px 28px;
         font-size: 1rem;
       }
+
       #testimonios,
       #servicios,
       #precios,
+      #marcas,
       #contacto {
         padding: 70px 0;
       }
+
       .titulo-seccion h2 {
         font-size: 2.2rem;
       }
+
       .titulo-seccion p {
         font-size: 1rem;
         padding: 0 10px;
       }
-      .tarjeta-testimonio {
-        padding: 30px 20px;
-      }
-      .texto-testimonio {
-        font-size: 1.1rem;
-      }
+
+      .tarjeta-testimonio,
       .servicio-card,
+      .marca-card,
       .info-contacto,
       .formulario-contacto {
         padding: 30px 20px;
       }
-      .icono-servicio {
+
+      .texto-testimonio {
+        font-size: 1.1rem;
+      }
+
+      .icono-servicio,
+      .icono-marca {
         font-size: 3rem;
       }
-      .servicio-card h3 {
+
+      .servicio-card h3,
+      .marca-card h3 {
         font-size: 1.3rem;
       }
+
       .tarjeta-precio .card-body h4 {
         font-size: 1.7rem;
       }
+
       .info-contacto h3 {
         font-size: 1.6rem;
       }
+
       .dato-contacto {
         font-size: 1rem;
       }
+
       .iconos-footer a {
         font-size: 1.4rem;
         margin: 0 10px;
       }
+
       #footer p {
         font-size: 0.95rem;
         padding: 0 10px;
@@ -421,38 +507,37 @@
   </style>
 </head>
 <body>
+
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#hero">
         <i class="fas fa-laptop-code me-2"></i>Asist Tech
       </a>
-      <button class="navbar-toggler" 
-              type="button" 
-              data-bs-toggle="collapse" 
-              data-bs-target="#menuPrincipal">
+
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#menuPrincipal"
+              aria-controls="menuPrincipal"
+              aria-expanded="false"
+              aria-label="Abrir menú">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="menuPrincipal">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#testimonios">Testimonios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#servicios">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#precios">Precios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#precios">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#marcas">Marcas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Parte del Hero -->
+  <!-- Hero -->
   <section id="hero">
     <div class="container">
       <h1>Asesoría Informática Profesional</h1>
@@ -463,14 +548,20 @@
     </div>
   </section>
 
-  <!-- Los Testimonios -->
+  <!-- Testimonios -->
   <section id="testimonios">
     <div class="container">
       <div class="titulo-seccion">
         <h2>Lo que dicen nuestros clientes</h2>
         <p>Empresas y profesionales que ya han confiado en Asist Tech</p>
       </div>
-      <div id="carrusel-testimonios" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="hover" data-bs-keyboard="true">
+
+      <div id="carrusel-testimonios"
+           class="carousel slide"
+           data-bs-ride="carousel"
+           data-bs-interval="10000"
+           data-bs-pause="hover"
+           data-bs-keyboard="true">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="tarjeta-testimonio">
@@ -479,6 +570,7 @@
               <p class="nombre-testimonio">Laura Pérez - Gerente de oficina</p>
             </div>
           </div>
+
           <div class="carousel-item">
             <div class="tarjeta-testimonio">
               <img src="Imagenes/testimonio2.jpg" alt="Cliente satisfecho" class="foto-testimonio">
@@ -487,10 +579,12 @@
             </div>
           </div>
         </div>
+
         <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-testimonios" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
         </button>
+
         <button class="carousel-control-next" type="button" data-bs-target="#carrusel-testimonios" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Siguiente</span>
@@ -499,30 +593,33 @@
     </div>
   </section>
 
-  <!-- Los Servicios -->
+  <!-- Servicios -->
   <section id="servicios">
     <div class="container">
       <div class="titulo-seccion">
         <h2>Nuestros Servicios</h2>
         <p>Soluciones completas de asesoría informática para optimizar tu negocio</p>
       </div>
-      <div class="row g-4">
-        <div class="col-lg-4 col-md-6">
-          <div class="servicio-card h-100">
+
+      <div class="row row-cols-1 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="servicio-card">
             <i class="fas fa-tools icono-servicio"></i>
             <h3>Mantenimiento Informático</h3>
             <p>Soporte técnico 24/7, mantenimiento preventivo y correctivo de equipos y redes.</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="servicio-card h-100">
+
+        <div class="col">
+          <div class="servicio-card">
             <i class="fas fa-code icono-servicio"></i>
             <h3>Desarrollo Web</h3>
             <p>Páginas web responsive, tiendas online y aplicaciones web a medida.</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="servicio-card h-100">
+
+        <div class="col">
+          <div class="servicio-card">
             <i class="fas fa-shield-alt icono-servicio"></i>
             <h3>Ciberseguridad</h3>
             <p>Protección de datos, auditorías de seguridad y formación contra ciberataques.</p>
@@ -532,16 +629,17 @@
     </div>
   </section>
 
-  <!-- Los Precios -->
+  <!-- Precios -->
   <section id="precios">
     <div class="container">
       <div class="titulo-seccion">
         <h2>Nuestros Planes</h2>
         <p>Elige la solución que mejor se adapta a las necesidades de tu negocio</p>
       </div>
+
       <div class="row row-cols-1 row-cols-lg-3 g-4">
         <div class="col tarjeta-precio">
-          <div class="card h-100">
+          <div class="card">
             <div class="card-header">
               <h3>Básico</h3>
             </div>
@@ -553,8 +651,9 @@
             </div>
           </div>
         </div>
+
         <div class="col tarjeta-precio">
-          <div class="card h-100">
+          <div class="card">
             <div class="card-header">
               <h3>Profesional</h3>
             </div>
@@ -566,8 +665,9 @@
             </div>
           </div>
         </div>
+
         <div class="col tarjeta-precio">
-          <div class="card h-100">
+          <div class="card">
             <div class="card-header">
               <h3>Empresa</h3>
             </div>
@@ -583,32 +683,62 @@
     </div>
   </section>
 
-  <!-- El Contacto -->
+  <!-- Marcas -->
+  <section id="marcas">
+    <div class="container">
+      <div class="titulo-seccion">
+        <h2>Marcas que confían en nosotros</h2>
+        <p>Trabajamos con empresas, comercios y profesionales de distintos sectores</p>
+      </div>
+
+      <div class="row row-cols-1 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="marca-card">
+            <i class="fas fa-building icono-marca"></i>
+            <h3>Empresas</h3>
+            <p>Soporte técnico y mantenimiento de sistemas para oficinas y negocios.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="marca-card">
+            <i class="fas fa-store icono-marca"></i>
+            <h3>Comercios</h3>
+            <p>Optimización de equipos, redes y puntos de venta para tiendas.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="marca-card">
+            <i class="fas fa-user-tie icono-marca"></i>
+            <h3>Autónomos</h3>
+            <p>Asesoría web, soporte remoto y soluciones informáticas a medida.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
   <section id="contacto">
     <div class="container">
       <div class="titulo-seccion">
         <h2>Contacta con Nosotros</h2>
         <p>Cuéntanos qué necesitas y te ayudaremos a encontrar la mejor solución informática</p>
       </div>
+
       <div class="row g-4 align-items-stretch">
         <div class="col-lg-5">
           <div class="info-contacto">
             <h3>Información de Contacto</h3>
             <p>Estamos disponibles para resolver tus dudas y ofrecerte asesoramiento personalizado.</p>
-            <div class="dato-contacto">
-              <i class="fas fa-map-marker-alt"></i>Madrid, España
-            </div>
-            <div class="dato-contacto">
-              <i class="fas fa-phone"></i>+34 600 123 456
-            </div>
-            <div class="dato-contacto">
-              <i class="fas fa-envelope"></i>info@asisttech.com
-            </div>
-            <div class="dato-contacto">
-              <i class="fas fa-clock"></i>Lunes a Viernes, 9:00 - 18:00
-            </div>
+            <div class="dato-contacto"><i class="fas fa-map-marker-alt"></i>Madrid, España</div>
+            <div class="dato-contacto"><i class="fas fa-phone"></i>+34 600 123 456</div>
+            <div class="dato-contacto"><i class="fas fa-envelope"></i>info@asisttech.com</div>
+            <div class="dato-contacto"><i class="fas fa-clock"></i>Lunes a Viernes, 9:00 - 18:00</div>
           </div>
         </div>
+
         <div class="col-lg-7">
           <div class="formulario-contacto">
             <form>
@@ -617,19 +747,23 @@
                   <label for="nombre" class="form-label">Nombre</label>
                   <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
                 </div>
+
                 <div class="col-md-6 mb-3">
                   <label for="correo" class="form-label">Correo electrónico</label>
                   <input type="email" class="form-control" id="correo" placeholder="tunombre@correo.com">
                 </div>
               </div>
+
               <div class="mb-3">
                 <label for="asunto" class="form-label">Asunto</label>
                 <input type="text" class="form-control" id="asunto" placeholder="Escribe el asunto">
               </div>
+
               <div class="mb-4">
                 <label for="mensaje" class="form-label">Mensaje</label>
                 <textarea class="form-control" id="mensaje" rows="6" placeholder="Cuéntanos qué necesitas"></textarea>
               </div>
+
               <button type="submit" class="btn btn-contacto btn-lg">Enviar mensaje</button>
             </form>
           </div>
@@ -638,23 +772,16 @@
     </div>
   </section>
 
-  <!-- El Footer -->
+  <!-- Footer -->
   <footer id="footer">
     <div class="container">
       <div class="iconos-footer">
-        <a href="https://twitter.com" target="_blank">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a href="https://facebook.com" target="_blank">
-          <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a href="https://instagram.com" target="_blank">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="mailto:info@asisttech.com">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:info@asisttech.com"><i class="fa-solid fa-envelope"></i></a>
       </div>
+
       <p>© 2026 Asist Tech. Todos los derechos reservados.</p>
       <p>Asesoría informática para empresas y profesionales.</p>
     </div>
