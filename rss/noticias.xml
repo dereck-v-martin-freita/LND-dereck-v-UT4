@@ -3,43 +3,63 @@
   <channel>
     <title>Asist Tech - Noticias destacadas</title>
     <link>http://127.0.0.1:5500/index.html</link>
-    <description>Últimas novedades y noticias destacadas sobre Asist Tech y sus servicios.</description>
+    <description>Novedades sobre servicios, mejoras técnicas y noticias destacadas de Asist Tech.</description>
     <language>es-es</language>
-    <lastBuildDate>Mon, 13 Apr 2026 20:35:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 21:05:00 +0100</lastBuildDate>
     <category>Noticias</category>
     <category>Novedades</category>
+    <image>
+      <url>http://127.0.0.1:5500/Imagenes/Foto.jpg</url>
+      <title>Asist Tech</title>
+      <link>http://127.0.0.1:5500/index.html</link>
+    </image>
     <item>
-      <title>Lanzamos un nuevo servicio de soporte prioritario</title>
-      <description><![CDATA[
-        <img src="http://127.0.0.1:5500/Imagenes/Foto.jpg" alt="Soporte prioritario" width="300"><br>
-        Asist Tech incorpora un nuevo servicio de atención prioritaria para resolver incidencias urgentes con mayor rapidez.
-      ]]></description>
+      <title>Asist Tech amplía su servicio de soporte remoto</title>
       <link>http://127.0.0.1:5500/index.html#servicios</link>
+      <description><![CDATA[
+        <img src="http://127.0.0.1:5500/Imagenes/Foto.jpg" alt="Soporte remoto ampliado" width="320"><br>
+        Nuestro servicio de soporte remoto incorpora nuevas franjas de atención para responder antes a incidencias de empresas y profesionales.
+      ]]></description>
       <pubDate>Sun, 12 Apr 2026 18:00:00 +0100</pubDate>
       <category>Noticias</category>
       <category>Soporte Técnico</category>
+      <enclosure url="http://127.0.0.1:5500/Imagenes/Foto.jpg" length="120000" type="image/jpeg" />
     </item>
     <item>
-      <title>Actualizamos nuestros planes para pequeñas empresas</title>
-      <description><![CDATA[
-        <img src="http://127.0.0.1:5500/Imagenes/testimonio1.jpg" alt="Planes actualizados" width="300"><br>
-        Hemos mejorado nuestros planes de servicio para adaptarlos mejor a pymes, comercios y autónomos.
-      ]]></description>
+      <title>Nuevas mejoras en nuestros planes para pymes</title>
       <link>http://127.0.0.1:5500/index.html#precios</link>
-      <pubDate>Mon, 13 Apr 2026 09:30:00 +0100</pubDate>
+      <description><![CDATA[
+        <img src="http://127.0.0.1:5500/Imagenes/testimonio1.jpg" alt="Planes para pymes" width="320"><br>
+        Hemos ajustado nuestros planes para ofrecer más equilibrio entre mantenimiento, seguridad y asistencia técnica periódica.
+      ]]></description>
+      <pubDate>Mon, 13 Apr 2026 08:30:00 +0100</pubDate>
       <category>Novedades</category>
       <category>Planes</category>
+      <enclosure url="http://127.0.0.1:5500/Imagenes/testimonio1.jpg" length="95000" type="image/jpeg" />
     </item>
     <item>
-      <title>Nueva línea de asesoría en ciberseguridad</title>
-      <description><![CDATA[
-        <img src="http://127.0.0.1:5500/Imagenes/testimonio2.jpg" alt="Ciberseguridad" width="300"><br>
-        Añadimos una nueva línea de asesoría en ciberseguridad para reforzar la protección de negocios y profesionales.
-      ]]></description>
+      <title>Publicamos una nueva línea de asesoría en ciberseguridad</title>
       <link>http://127.0.0.1:5500/index.html#faq</link>
-      <pubDate>Mon, 13 Apr 2026 14:00:00 +0100</pubDate>
+      <description><![CDATA[
+        <img src="http://127.0.0.1:5500/Imagenes/testimonio2.jpg" alt="Asesoría en ciberseguridad" width="320"><br>
+        Asist Tech incorpora nuevos servicios orientados a prevención, contraseñas seguras, copias de seguridad y buenas prácticas digitales.
+      ]]></description>
+      <pubDate>Mon, 13 Apr 2026 12:00:00 +0100</pubDate>
       <category>Noticias</category>
       <category>Ciberseguridad</category>
+      <enclosure url="http://127.0.0.1:5500/Imagenes/testimonio2.jpg" length="98000" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Nuevo contenido para comercios y negocios locales</title>
+      <link>http://127.0.0.1:5500/index.html#marcas</link>
+      <description><![CDATA[
+        <img src="http://127.0.0.1:5500/Imagenes/Foto.jpg" alt="Servicios para comercios" width="320"><br>
+        Hemos reforzado nuestra propuesta para tiendas y negocios locales con soporte para equipos, redes y puntos de venta.
+      ]]></description>
+      <pubDate>Mon, 13 Apr 2026 16:15:00 +0100</pubDate>
+      <category>Novedades</category>
+      <category>Comercios</category>
+      <enclosure url="http://127.0.0.1:5500/Imagenes/Foto.jpg" length="120000" type="image/jpeg" />
     </item>
   </channel>
 </rss>
