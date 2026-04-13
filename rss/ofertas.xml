@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Asist Tech - Ofertas de la semana</title>
+    <link>http://127.0.0.1:5500/index.html</link>
+    <description>Ofertas, promociones y packs especiales de servicios informáticos.</description>
+    <language>es-es</language>
+    <lastBuildDate>Mon, 13 Apr 2026 20:30:00 +0100</lastBuildDate>
+    <category>Ofertas</category>
+    <category>Promociones</category>
+    <item>
+      <title>Descuento del 20% en mantenimiento informático</title>
+      <description><![CDATA[
+        <img src="http://127.0.0.1:5500/Imagenes/Foto.jpg" alt="Oferta mantenimiento" width="300"><br>
+        Esta semana aplicamos un 20% de descuento en nuestro servicio de mantenimiento informático para nuevos clientes.
+      ]]></description>
+      <link>http://127.0.0.1:5500/index.html#precios</link>
+      <pubDate>Mon, 13 Apr 2026 10:00:00 +0100</pubDate>
+      <category>Ofertas</category>
+      <category>Mantenimiento</category>
+    </item>
+    <item>
+      <title>Pack web + soporte para autónomos</title>
+      <description><![CDATA[
+        <img src="http://127.0.0.1:5500/Imagenes/testimonio1.jpg" alt="Pack web" width="300"><br>
+        Nuevo pack con desarrollo web básico y soporte remoto mensual pensado para profesionales independientes.
+      ]]></description>
+      <link>http://127.0.0.1:5500/index.html#servicios</link>
+      <pubDate>Mon, 13 Apr 2026 12:00:00 +0100</pubDate>
+      <category>Promociones</category>
+      <category>Desarrollo Web</category>
+    </item>
+    <item>
+      <title>Primera copia de seguridad sin coste</title>
+      <description><![CDATA[
+        <img src="http://127.0.0.1:5500/Imagenes/testimonio2.jpg" alt="Copia de seguridad" width="300"><br>
+        Contrata uno de nuestros planes y te configuramos gratis la primera copia de seguridad de tu negocio.
+      ]]></description>
+      <link>http://127.0.0.1:5500/index.html#contacto</link>
+      <pubDate>Mon, 13 Apr 2026 17:00:00 +0100</pubDate>
+      <category>Ofertas</category>
+      <category>Soporte</category>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Asist Tech - Noticias destacadas</title>
+    <link>http://127.0.0.1:5500/index.html</link>
+    <description>Últimas novedades y noticias destacadas sobre Asist Tech y sus servicios.</description>
+    <language>es-es</language>
+    <lastBuildDate>Mon, 13 Apr 2026 20:35:00 +0100</lastBuildDate>
+    <category>Noticias</category>
+    <category>Novedades</category>
+    <item>
+      <title>Lanzamos un nuevo servicio de soporte prioritario</title>
+      <description><![CDATA[
+        <img src="http://127.0.0.1:5500/Imagenes/Foto.jpg" alt="Soporte prioritario" width="300"><br>
+        Asist Tech incorpora un nuevo servicio de atención prioritaria para resolver incidencias urgentes con mayor rapidez.
+      ]]></description>
+      <link>http://127.0.0.1:5500/index.html#servicios</link>
+      <pubDate>Sun, 12 Apr 2026 18:00:00 +0100</pubDate>
+      <category>Noticias</category>
+      <category>Soporte Técnico</category>
+    </item>
+    <item>
+      <title>Actualizamos nuestros planes para pequeñas empresas</title>
+      <description><![CDATA[
+        <img src="http://127.0.0.1:5500/Imagenes/testimonio1.jpg" alt="Planes actualizados" width="300"><br>
+        Hemos mejorado nuestros planes de servicio para adaptarlos mejor a pymes, comercios y autónomos.
+      ]]></description>
+      <link>http://127.0.0.1:5500/index.html#precios</link>
+      <pubDate>Mon, 13 Apr 2026 09:30:00 +0100</pubDate>
+      <category>Novedades</category>
+      <category>Planes</category>
+    </item>
+    <item>
+      <title>Nueva línea de asesoría en ciberseguridad</title>
+      <description><![CDATA[
+        <img src="http://127.0.0.1:5500/Imagenes/testimonio2.jpg" alt="Ciberseguridad" width="300"><br>
+        Añadimos una nueva línea de asesoría en ciberseguridad para reforzar la protección de negocios y profesionales.
+      ]]></description>
+      <link>http://127.0.0.1:5500/index.html#faq</link>
+      <pubDate>Mon, 13 Apr 2026 14:00:00 +0100</pubDate>
+      <category>Noticias</category>
+      <category>Ciberseguridad</category>
+    </item>
+  </channel>
+</rss>
