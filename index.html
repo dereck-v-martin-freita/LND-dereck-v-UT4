@@ -474,6 +474,15 @@
       color: #ff4c68;
     }
 
+    .iconos-footer img {
+      transition: all 0.3s ease;
+    }
+
+    .iconos-footer a:hover img {
+      opacity: 0.8;
+      transform: translateY(-2px);
+    }
+
     #footer p {
       color: #adb5bd;
       margin-bottom: 10px;
@@ -987,17 +996,26 @@
   <footer id="footer">
     <div class="container">
       <div class="iconos-footer">
-        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="mailto:info@asisttech.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="mailto:info@asisttech.com" aria-label="Correo electrónico">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="rss/" aria-label="Canales RSS de Asist Tech" title="Canales RSS de Asist Tech">
+          <img src="/rss/pic_rss.gif" alt="RSS" width="36" height="14" style="display:inline-block; vertical-align:middle;">
+        </a>
       </div>
-
       <p>© 2026 Asist Tech. Todos los derechos reservados.</p>
       <p>Asesoría informática para empresas y profesionales.</p>
     </div>
   </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
